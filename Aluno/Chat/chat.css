@@ -1,0 +1,140 @@
+#chat-box::-webkit-scrollbar {
+    width: 8px;
+}
+#chat-box::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+#chat-box::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+}
+#chat-box::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+h1 {
+    margin-bottom: 20px;
+}
+input[type="text"] {
+    width: 300px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+button {
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+ul {
+    padding: 0;
+    text-align: center;
+}
+li {
+    width: 40px;
+    text-align: left;
+    
+}
+#nome {
+    background-image: linear-gradient(to right, #032c64 20%, #cecece 70%);
+    color: rgb(255, 255, 255);
+    border: 1px solid black;
+    font-size: 20px;
+    width: 400px;
+}
+#nome::placeholder {
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+}
+#enviar {
+    background-color: #cecece;
+    color: rgb(0, 0, 0);
+    border: 1px solid black;
+    font-size: 18px;
+    transition: background-color 0.5s;
+}
+#enviar:hover {
+    color: #000000;
+    background-color: #fde084;
+}
+#areachat {
+    margin-left: 75vh;
+    margin-top: 70px;
+}
+#chat-box {
+    background-image: linear-gradient(to right, #032c64 10%, #cecece 70%);
+    width: 400px;
+    height: 350px;
+    overflow: auto;
+    border: 1px solid #000000;
+    border-radius: 15px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+#mensagens {
+    list-style: none;
+    margin: 0;
+}
+#mensagens li {
+    background: #f9f9f9;
+    padding: 10px;
+    width: 380px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    list-style-type: none;
+}
+#mensagem {
+    background-image: linear-gradient(to right, #032c64 20%, #cecece 70%);
+    color: rgb(255, 255, 255);
+    border: 1px solid black;
+    font-size: 20px;
+}
+#mensagem::placeholder {
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+}
+#mensagem:focus {
+    outline: none;
+}
+#seta {
+    width: 50px;
+    height: 50px;
+    margin-left: 3px;
+    
+}
+#seta:hover {
+    border-radius: 48px;
+    background-color: #fde084;
+    transition: background-color 0.5s;
+}
+#header {
+    display: flex;
+    height: 60px;
+    width: 100%;
+    background-image: linear-gradient(to right, #032c64 30%, #cecece 70%);
+}
+
+
+#header img {
+    height: 60px;
+    width: 60px;
+}
+#headerlateral {
+    height: auto;
+    width: 60px;
+    background-color: #032c64;
+}
+#divisoes {
+    display: flex;
+    background-position: center;
+    background-image: url('../ARQUIVOSGERAIS/FundoChat.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/*responsividade 673 por 329*/

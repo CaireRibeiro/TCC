@@ -1,0 +1,220 @@
+body {
+    font-family: 'Raleway', sans-serif;
+    background-image: url("ARQUIVOSGERAIS/fundoPainel.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 0px 150px;
+    padding-bottom: 15px;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-weight: bold;
+    color: black;
+}
+
+@keyframes entradaDaEsquerda {
+    from {
+      opacity: 0;
+      transform: translateX(-100px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes entradaDaDireita {
+    from {
+      opacity: 0;
+      transform: translateX(100px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+#divisoes {
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-around;
+}
+#areafoto {
+    height: 500px;
+    width: 500px;
+    background-color: #032c64;
+    border-radius: 100%;
+    opacity: 0;
+    transform: translateX(-100px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    animation: entradaDaEsquerda 1s ease forwards; 
+}
+#frente, #tras {
+    position: absolute;
+    backface-visibility: hidden;
+    transition: transform 0.8s ease;
+}
+#frente {
+    z-index: 2;
+}
+#frente img {
+    width: 400px;
+    height: 400px;
+    border-radius: 100%;
+    margin-left: 60px;
+    margin-top: 55px;
+}
+#tras {
+    transform: rotateY(180deg);
+    z-index: 1;
+    margin-top: 200px;
+    margin-left: 10px;
+    font-size: 25px;
+}
+#tras p {    
+    color: white;
+}
+#areafoto:hover #frente {
+    transform: rotateY(-180deg);
+}
+  
+#areafoto:hover #tras {
+    transform: rotateY(0deg);
+}
+#areaquemsomos {
+    margin-left: 40px;
+    margin-top: 100px;
+    flex: 1;
+    opacity: 0; 
+    transform: translateX(100px); 
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    animation: entradaDaDireita 1s ease forwards;
+}
+#qmsomos {
+    font-size: 40px;
+}
+#textoqmsomos {
+    padding-right: 80px;
+    margin-top: 40px;
+    font-size: 20px;
+    line-height: 1.25;
+    font-weight:500;
+}
+
+
+
+
+#areamvv {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+#b1, #b2, #b3 {
+    height: 225px;
+    width: 225px;
+    border-radius: 40px;
+}
+#b1 {
+    background-color: #fde084;
+    padding: 15px;
+    transition: transform 0.3s ease;
+}
+#b2 {
+    background-color: #032c64;
+    padding: 15px;
+    transition: transform 0.3s ease;
+}
+#b3 {
+    background-color: #757575;
+    padding: 15px;
+    transition: transform 0.3s ease;
+}
+#b1:hover, #b2:hover, #b3:hover {
+    transform: scale(1.1);
+}
+#tb1 {
+    font-size: 25px;
+    text-align: center;
+    font-weight: bold;
+}
+#tb2 {
+    font-size: 25px;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+}
+#tb3 {
+    font-size: 25px;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+}
+#pb1 {
+    line-height: 1.50;
+    margin-top: 20px;
+    font-size: 17px;
+    font-weight: 600;
+}
+#pb2 {
+    line-height: 1.50;
+    margin-top: 20px;
+    font-size: 17px;
+    font-weight: 550;
+    color: white;
+}
+#pb3 {
+    line-height: 1.50;
+    margin-top: 25px;
+    font-size: 17px;
+    font-weight: 550;
+    color: white;
+}
+
+
+
+#tituloplataforma {
+    font-size: 50px;
+    text-align: center;
+    margin-top: 50px;
+}
+#areaplataforma {
+    margin-top: 50px;
+    height: 300px;
+    width: auto;
+    background-color: #032c64;
+    border-radius: 60px;
+    display: flex;
+    align-items: center;
+}
+#fotoareaplataforma {
+    height: 300px;
+    width: 300px;
+    margin-top: 25px;
+    margin-left: 50px;
+}
+#seta {
+    transform: rotateY(180deg);
+    width: 100px;
+    height: 100px;
+}
+#areadescricaoplataforma {
+    padding: 80px;
+}
+#areadescricaoplataforma p {
+    line-height: 1.50;
+    color: white;
+    margin-bottom: 30px;
+}
+#cliqueaq {
+    font-size: 20px;
+    color: white;
+}
+#cliqueaq a {
+    color: #fde084;
+    font-size: 20px;
+}
+#cliqueaq a:hover {
+    color: #757575;
+}

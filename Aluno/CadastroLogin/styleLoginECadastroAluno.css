@@ -1,0 +1,294 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 13px;
+    overflow-x: hidden;
+    background-image: url(../ARQUIVOSGERAIS/fundo.png);
+    
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+    @keyframes slideInFromLeft {
+        to {
+        left: 2px;
+        } 
+  }
+    @keyframes fadeIn {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+  }
+
+
+      @keyframes btn-anim1 {
+        0% {
+          left: -100%;
+        }
+        50%,100% {
+          left: 100%;
+        }
+  }
+      @keyframes btn-anim2 {
+        0% {
+          top: -100%;
+        }
+        50%,100% {
+          top: 100%;
+        }
+  }
+      @keyframes btn-anim3 {
+        0% {
+          right: -100%;
+        }
+        50%,100% {
+          right: 100%;
+        }
+  }
+      @keyframes btn-anim4 {
+        0% {
+          bottom: -100%;
+        }
+        50%,100% {
+          bottom: 100%;
+        }
+  }
+
+
+#Login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+#tituloLogin {
+  font-size: 25px;
+  font-weight: bold;
+  position:relative;
+  left: -22px;
+  animation: slideInFromLeft 1s forwards, fadeIn 1s forwards;
+  color: white;
+}
+#textoEsqueciSenha {
+  color: rgba(239, 239, 239, 0.75);
+  font-size: 11px;
+  margin-top: 8px;
+  text-align: left;
+  margin-top: 12px;
+  margin-left: 34px;
+  position:relative;
+  left: -22px;
+  animation: slideInFromLeft 1s forwards, fadeIn 1s forwards;
+}
+#logo {
+  width: 200px;
+  height: 200px;
+  animation: slideInFromLeft 1s forwards, fadeIn 1s forwards;
+}
+#logologin {
+  width: 250px;
+  height: 250px;
+}
+#buttonCadastrar {
+  width: 13em;
+  height: 3em;
+  border: none;
+  border-radius: 30px;
+  font-weight: bold;
+  transition: transform 0.3s ease, background-position 1.5s ease;
+  animation: slideInFromLeft 1s forwards, fadeIn 1s forwards;
+  background: linear-gradient(to right, #ffd760 0%,  #ffdc73 50%, #ffefbe 50%, #ffffff 100%);
+  background-size: 200% 100%;
+  background-position: 100% 0;
+}
+#buttonCadastrar:hover {
+  background-color: none;
+  transform: scale(1.05);
+  background-position: 0 0;
+  font-weight: bold;
+  cursor: pointer;
+}
+#buttonEntrar {
+  margin-top: 20px;
+  width: 13em;
+  height: 3em;
+  border: none;
+  border-radius: 30px;
+  font-weight: bold;
+  transition: transform 0.3s ease, background-position 1.5s ease;
+  animation: slideInFromLeft 1s forwards, fadeIn 1s forwards;
+  background: linear-gradient(to right, #ffd760 0%,  #ffdc73 50%, #ffefbe 50%, #ffffff 100%);
+  background-size: 200% 100%;
+  background-position: 100% 0;
+}
+#buttonEntrar:hover {
+  background-color: none;
+  transform: scale(1.05);
+  background-position: 0 0;
+  font-weight: bold;
+  cursor: pointer;
+}
+#buttonCadastreSe {
+  color: white;
+  margin-top: 20px;
+}
+#buttonCadastreSe a {
+  color: #289bb8;
+  text-decoration: none;
+}
+#titlesexo {
+  text-align: left;
+  margin-left: 34px;
+  margin-top: 20px ;
+  font-size: 12px;
+  font-weight: bold;
+  position:relative;
+  animation: slideInFromLeft 1s forwards, fadeIn 1s forwards;
+  color: white;
+}
+#areainputssexo {
+  text-align: left;
+  margin-left: 34px;
+  margin-top: 10px;
+}
+.inputs {
+  padding: 15px 2px 3px 0px;
+  margin-top: 13px;
+  width: 330px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid black;
+  outline: none;
+  position: relative;
+  left: -22px;
+  animation: slideInFromLeft 1s forwards, fadeIn 1s forwards;
+  color: white;
+  font-size: 15px;
+}
+.inputslogin {
+  padding: 15px 2px 3px 0px;
+  margin-top: 40px;
+  width: 330px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid black;
+  outline: none;
+  position: relative;
+  left: -22px;
+  animation: slideInFromLeft 1s forwards, fadeIn 1s forwards;
+  color: white;
+  font-size: 15px;
+}
+.inputssexo {
+  color: white;
+  margin-top: 5px;
+  animation: slideInFromLeft 1s forwards, fadeIn 1s forwards;
+}
+.forinput, .message  {
+  color: white;
+  animation: slideInFromLeft 1s forwards, fadeIn 1s forwards;
+}
+.message a {
+  text-decoration: none;
+  color: #fde084;
+}
+.message a:hover {
+  border-bottom: 1px solid white;
+}
+.funcaospan {
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  color: #289bb8;
+  font-size: 16px;
+  text-decoration: none;
+  overflow: hidden;
+  transition: .5s;
+  margin-top: 5px;
+  letter-spacing: 2px
+}
+.funcaospan span:nth-child(1) {
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #289bb8);
+  animation: btn-anim1 1s linear infinite;
+}
+.funcaospan span:nth-child(2) {
+  top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, #289bb8);
+  animation: btn-anim2 1s linear infinite;
+  animation-delay: .25s
+}
+.funcaospan span:nth-child(3) {
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(270deg, transparent, #289bb8);
+  animation: btn-anim3 1s linear infinite;
+  animation-delay: .5s
+ }
+.funcaospan span:nth-child(4) {
+  bottom: -100%;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(360deg, transparent, #289bb8);
+  animation: btn-anim4 1s linear infinite;
+  animation-delay: .75s;
+}
+.form-register {
+  position: relative;
+  z-index: 1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0,0,0,.5);
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0,0,0,.6);       
+  width: 400px;
+  height: 580px;
+  background-color: white;
+  background-image: linear-gradient(to bottom, #032c64 48%, black);
+  border-radius: 40px;
+  border: 3px solid black;
+  text-align: center;
+}
+.form-login{
+  position: relative;
+  z-index: 1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0,0,0,.5);
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0,0,0,.6);
+  width: 400px;
+  height: 580px;
+  background-color: white;
+  background-image: linear-gradient(to bottom, #032c64 48%, black);
+  border-radius: 40px;
+  border: 3px solid black;
+  text-align: center;
+}

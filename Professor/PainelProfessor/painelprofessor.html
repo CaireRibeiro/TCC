@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../ARQUIVOSGERAIS/reset.css">
+    <link rel="stylesheet" href="stylePainelProfessor.css">
+    <link rel="icon" href="../ARQUIVOSGERAIS/LogoSemNome.jpeg" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Play:wght@700&display=swap" rel="stylesheet">
+    <title>Painel</title>
+</head>
+<body>
+
+<div id="header">
+            <img src="../ARQUIVOSGERAIS/LogoSemNome-removebg-preview.png">
+            <div id="tituloheader">Precious Society</div>
+            <a href="../CadastroELoginProfessor/sairProfessor.php">Sair</a>
+    </div>
+
+    <div id="divisoes">
+        <div id="headerlateral">
+            <div id="areabotoes">
+                <a href="#" onclick="trocaAreas('divisao1')"><img src="../ARQUIVOSGERAIS/usuario.png" class="imagenscanto"></a>
+                <a href="../../Aluno/Chat/chat.php"><img src="../ARQUIVOSGERAIS/chat.png" class="imagenscanto"></a>
+                <a href="#" onclick="trocaAreas('divisao4')"><img src="../ARQUIVOSGERAIS/livro.png" class="imagenscanto"></a>
+                <a href="#" onclick="trocaAreas('divisao3')"><img src="../ARQUIVOSGERAIS/video.png" class="imagenscanto"></a>
+            </div>
+        </div>
+
+        <div id="divisao1">
+            <img src="../ARQUIVOSGERAIS/iconeprofessor.png" id="imagemdaaluna">
+            <div style="margin-top: 35px;">
+                <p>Nome:</p>
+                <input type="text" class="inputsinfo">
+            </div>
+            <div>
+                <p>Formação Academica</p>
+                <input type="text" class="inputsinfo">
+            </div>
+            <div>
+                <p>Data de Nascimento:</p>
+                <input type="date" class="inputsinfo">
+            </div>
+            <div>
+                <p>Email:</p>
+                <input type="text" class="inputsinfo">
+            </div>
+            <div>
+                <p>Senha:</p>
+                <input type="password" class="inputsinfo">
+            </div>
+            <div>
+                <p>Sexo:</p>
+                <input type="text" class="inputsinfo">
+            </div>
+
+        </div>
+
+        <div id="divisao2">
+            <p>Aluno/a</p>
+        </div>
+
+        <div id="divisao3" class="hidden">
+            <p>divi3</p>
+        </div>
+
+        <div id="divisao4" class="hidden">
+            <div id="tituloatividades">Postagem de Atividades</div>
+            <div id="areasdepostagemdeatividades">
+                <div id="postaativi">
+                    <div class="tituloenvioativi">Publicação de Atividades</div>
+                    <input type="file" id="inputdeenvio">
+                </div>
+                <div id="vernotaaluno">
+                    <div class="tituloenvioativi">Notas Alunos/Alunas</div>
+                </div>
+            </div>
+            
+        </div>
+
+
+        <script src="scriptProfessor.js"></script>
+
+
+</body>

@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body {
+    background-image: url("ARQUIVOSGERAIS/pngtree-education-all-icons-background-vector-image_917309.png");
+    font-family: 'Work Sans', sans-serif;
+    font-size: 13px;
+    overflow-x: hidden;
+}
+.botao {
+    margin-top: 10px;
+    position: relative;
+    padding: 20px 35px;
+    font-size: 16px;
+    color: #000000;
+    border: 1px solid black;
+    border-radius: 15px;
+    cursor: pointer;
+    overflow: hidden;
+    background-color: white;
+    background: linear-gradient(to right, #ffd760 0%,  #ffdc73 50%, #ffefbe 50%, #ffffff 100%);
+    background-size: 200% 100%;
+    background-position: 100% 0;
+    transition: background-position 1.0s ease;
+}
+.botao:hover {
+    color: #000000;
+    background-position: 0 0;
+}
+#areaInicio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+#areaAlunoEOrientador{
+    width: 400px;
+    height: 520px;
+    background: linear-gradient(to bottom, #032c64 39%, #757575);
+    background-color: #032c64;
+    padding: 0px 50px;
+    border: 3px solid #000000;
+    border-radius: 60px;
+    transition: transform 1.0s ease;
+}
+#areaAlunoEOrientador:hover {
+    transform: scale(1.04);
+}
+#areaFoto img {
+    width: 275px;
+    height: auto;
+    margin-left: 10px;
+    margin-top: 15px;
+}
+#areaBotoes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
